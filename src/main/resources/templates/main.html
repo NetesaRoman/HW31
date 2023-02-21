@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/styles/style.css}">
+    <title >Main</title>
+
+</head>
+<body>
+<header>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out"/>
+    </form>
+</header>
+<nav>
+    <ul>
+        <li><form th:action="@{/showAll}" method="get"><button type="submit">all products</button></form></li>
+        <li><form th:action="@{/showThird}" method="get"><button type="submit">3d product</button></form></li>
+        <li><form th:action="@{/add}" method="get"><button type="submit">add Banana</button></form></li>
+        <li><form th:action="@{/delete}" method="get"><button type="submit">delete 2nd product</button></form></li>
+
+    </ul>
+</nav>
+<main>
+    <h1 >Hello!</h1>
+   </main>
+<footer>
+    
+</footer>
+</body>
+</html>
